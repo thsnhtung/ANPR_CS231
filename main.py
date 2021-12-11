@@ -65,8 +65,8 @@ def run(license_plate_config, character_config, save_dir, visualize, save_img):
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--license_plate_config', type=str, default= r'my_models\license_plate_config.yaml', help ='path to config file')
-    parser.add_argument('--character_config', type=str, default= r'my_models\license_plate_config.yaml', help ='path to config file')
+    parser.add_argument('--license_plate_config', type=str, default= r'config\license_plate_config.yaml', help ='path to config file')
+    parser.add_argument('--character_config', type=str, default= r'config\character_config.yaml', help ='path to config file')
     parser.add_argument('--save_dir', type=str, default= r'output', help='save result in this dir')
     parser.add_argument('--visualize', action='store_true', help='visualize video image')
     parser.add_argument('--save_img', action='store_true', help='save image')

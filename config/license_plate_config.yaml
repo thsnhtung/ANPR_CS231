@@ -1,0 +1,22 @@
+model_path : 'my_models\license_plate_2.pt'
+imgsz : 640
+conf_thres : 0.5
+iou_thres : 0.45
+max_det : 1000
+class_name : ["plate"]
+color_map : [[255, 0 ,0]]
+agnostic_nms : False
+device : 'cuda'
+auto : False 
+stride : 16
+source : 'video\uit_video.mp4'
+line_thickness : 3
+line_size : 2
+hide_confidence : False
+
+
+## Sort
+max_age : 2
+min_hits : 3
+iou_threshold : 0.3
+
