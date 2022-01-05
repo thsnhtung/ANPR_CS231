@@ -257,3 +257,10 @@ def enhance_contrast(img):
 
   return cv2.merge([equalized_b_img, equalized_g_img, equalized_r_img]),\
          cv2.merge([cv2.equalizeHist(b_img), cv2.equalizeHist(g_img), cv2.equalizeHist(r_img)])
+
+
+
+
+def get_specific_classes(boxes, cls):
+    return np.array([box for box in boxes if int(box[5]) in cls])
+    

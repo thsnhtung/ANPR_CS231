@@ -1,15 +1,15 @@
-model_path : 'my_models\license_plate_2.pt'
-imgsz : 640
+model_path : 'my_models\new_model.pt'
+imgsz : 1280
 conf_thres : 0.5
 iou_thres : 0.45
 max_det : 1000
-class_name : ["plate"]
-color_map : [[255, 0 ,0]]
+class_name : ["car", "truck", "plate", "plate", "motorbike", "bus", "van", "bagac"]
+color_map : [[255, 0 ,0], [255, 255 ,0], [125, 0, 100], [125, 0, 100], [100, 200, 50], [50, 150, 200], [150, 0, 200], [255, 155, 70]]
 agnostic_nms : False
 device : 'cuda'
 auto : False 
 stride : 16
-source : 'video\uit_video.mp4'
+source : 'video\79.h264'
 line_thickness : 3
 line_size : 2
 hide_confidence : False
